@@ -1,0 +1,6 @@
+ACCEPT COACH_ID NUMBER PROMPT 'Coach ID to update: '
+ACCEPT NEW_NAME CHAR PROMPT 'New coach name: '
+
+UPDATE COACH SET COACH_NAME = '&NEW_NAME' WHERE COACH_ID = &COACH_ID;
+COMMIT;
+PROMPT Coach updated successfully.

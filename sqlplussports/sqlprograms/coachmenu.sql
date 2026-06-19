@@ -1,0 +1,23 @@
+PROMPT
+PROMPT COACH MANAGEMENT
+PROMPT 1. ADD COACH
+PROMPT 2. UPDATE COACH
+PROMPT 3. DELETE COACH
+PROMPT 4. SEARCH COACH
+PROMPT 5. DISPLAY COACHES
+PROMPT
+
+ACCEPT CHOICE NUMBER PROMPT 'Enter choice: '
+
+COLUMN ACTION_SCRIPT NEW_VALUE ACTION_SCRIPT NOPRINT
+SELECT CASE &CHOICE
+          WHEN 1 THEN 'coach_add.sql'
+          WHEN 2 THEN 'coach_update.sql'
+          WHEN 3 THEN 'coach_delete.sql'
+          WHEN 4 THEN 'coach_search.sql'
+          WHEN 5 THEN 'coach_display.sql'
+          ELSE 'invalidmenu.sql'
+       END ACTION_SCRIPT
+FROM DUAL;
+
+@@&ACTION_SCRIPT

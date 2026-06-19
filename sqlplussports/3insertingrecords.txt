@@ -1,0 +1,341 @@
+INSERT INTO SPORT VALUES(1,'Cricket',5000,'Morning');
+INSERT INTO SPORT VALUES(2,'Football',4500,'Evening');
+INSERT INTO SPORT VALUES(3,'Badminton',4000,'Morning');
+INSERT INTO SPORT VALUES(4,'Basketball',4800,'Evening');
+INSERT INTO SPORT VALUES(5,'Volleyball',3500,'Morning');
+INSERT INTO SPORT VALUES(6,'Tennis',5500,'Evening');
+INSERT INTO SPORT VALUES(7,'Table Tennis',3000,'Morning');
+INSERT INTO SPORT VALUES(8,'Hockey',5200,'Evening');
+INSERT INTO SPORT VALUES(9,'Swimming',6000,'Morning');
+INSERT INTO SPORT VALUES(10,'Athletics',3800,'Evening');
+
+COMMIT;
+SQL> INSERT INTO PLAYER VALUES(101,'Rahul Sharma',18,'Male','9876543210',1);
+
+1 row created.
+
+SQL> INSERT INTO PLAYER VALUES(102,'Priya Patel',19,'Female','9876543211',3);
+
+1 row created.
+
+SQL> INSERT INTO PLAYER VALUES(103,'Amit Kumar',20,'Male','9876543212',2);
+
+1 row created.
+
+SQL> INSERT INTO PLAYER VALUES(104,'Riya Shah',17,'Female','9876543213',4);
+
+1 row created.
+
+SQL> INSERT INTO PLAYER VALUES(105,'Karan Mehta',21,'Male','9876543214',5);
+
+1 row created.
+
+SQL> INSERT INTO PLAYER VALUES(106,'Neha Joshi',18,'Female','9876543215',6);
+
+1 row created.
+
+SQL> INSERT INTO PLAYER VALUES(107,'Arjun Singh',22,'Male','9876543216',7);
+
+1 row created.
+
+SQL> INSERT INTO PLAYER VALUES(108,'Pooja Verma',19,'Female','9876543217',8);
+
+1 row created.
+
+SQL> INSERT INTO PLAYER VALUES(109,'Vikram Desai',20,'Male','9876543218',9);
+
+1 row created.
+
+SQL> INSERT INTO PLAYER VALUES(110,'Sneha Dave',18,'Female','9876543219',10);
+
+1 row created.
+
+SQL>
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> INSERT INTO COACH VALUES(201,'Hardik Chavda',10,'9991110001',50000);
+
+1 row created.
+
+SQL> INSERT INTO COACH VALUES(202,'Jay Patel',8,'9991110002',45000);
+
+1 row created.
+
+SQL> INSERT INTO COACH VALUES(203,'Rakesh Kumar',12,'9991110003',55000);
+
+1 row created.
+
+SQL> INSERT INTO COACH VALUES(204,'Anita Shah',9,'9991110004',47000);
+
+1 row created.
+
+SQL> INSERT INTO COACH VALUES(205,'Vivek Mehta',11,'9991110005',52000);
+
+1 row created.
+
+SQL> INSERT INTO COACH VALUES(206,'Komal Joshi',7,'9991110006',43000);
+
+1 row created.
+
+SQL> INSERT INTO COACH VALUES(207,'Manoj Singh',15,'9991110007',60000);
+
+1 row created.
+
+SQL> INSERT INTO COACH VALUES(208,'Nisha Patel',6,'9991110008',42000);
+
+1 row created.
+
+SQL> INSERT INTO COACH VALUES(209,'Sanjay Desai',13,'9991110009',57000);
+
+1 row created.
+
+SQL> INSERT INTO COACH VALUES(210,'Priti Dave',8,'9991110010',45000);
+
+1 row created.
+
+SQL>
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> INSERT INTO ADMISSION VALUES(301,101,1,TO_DATE('10-01-2026','DD-MM-YYYY'));
+
+1 row created.
+
+SQL> INSERT INTO ADMISSION VALUES(302,102,3,TO_DATE('12-01-2026','DD-MM-YYYY'));
+
+1 row created.
+
+SQL> INSERT INTO ADMISSION VALUES(303,103,2,TO_DATE('14-01-2026','DD-MM-YYYY'));
+
+1 row created.
+
+SQL> INSERT INTO ADMISSION VALUES(304,104,4,TO_DATE('15-01-2026','DD-MM-YYYY'));
+
+1 row created.
+
+SQL> INSERT INTO ADMISSION VALUES(305,105,5,TO_DATE('18-01-2026','DD-MM-YYYY'));
+
+1 row created.
+
+SQL> INSERT INTO ADMISSION VALUES(306,106,6,TO_DATE('20-01-2026','DD-MM-YYYY'));
+
+1 row created.
+
+SQL> INSERT INTO ADMISSION VALUES(307,107,7,TO_DATE('21-01-2026','DD-MM-YYYY'));
+
+1 row created.
+
+SQL> INSERT INTO ADMISSION VALUES(308,108,8,TO_DATE('23-01-2026','DD-MM-YYYY'));
+
+1 row created.
+
+SQL> INSERT INTO ADMISSION VALUES(309,109,9,TO_DATE('25-01-2026','DD-MM-YYYY'));
+
+1 row created.
+
+SQL> INSERT INTO ADMISSION VALUES(310,110,10,TO_DATE('28-01-2026','DD-MM-YYYY'));
+
+1 row created.
+
+SQL>
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> INSERT INTO TOURNAMENT VALUES(401,'State Championship','Rajkot',TO_DATE('10-02-2026','DD-MM-YYYY'));
+
+1 row created.
+
+SQL> INSERT INTO TOURNAMENT VALUES(402,'National Cricket Cup','Ahmedabad',TO_DATE('15-02-2026','DD-MM-YYYY'));
+
+1 row created.
+
+SQL> INSERT INTO TOURNAMENT VALUES(403,'Football League','Surat',TO_DATE('20-02-2026','DD-MM-YYYY'));
+
+1 row created.
+
+SQL> INSERT INTO TOURNAMENT VALUES(404,'Badminton Open','Vadodara',TO_DATE('25-02-2026','DD-MM-YYYY'));
+
+1 row created.
+
+SQL> INSERT INTO TOURNAMENT VALUES(405,'Basketball Challenge','Rajkot',TO_DATE('01-03-2026','DD-MM-YYYY'));
+
+1 row created.
+
+SQL> INSERT INTO TOURNAMENT VALUES(406,'Volleyball Trophy','Jamnagar',TO_DATE('05-03-2026','DD-MM-YYYY'));
+
+1 row created.
+
+SQL> INSERT INTO TOURNAMENT VALUES(407,'Tennis Masters','Ahmedabad',TO_DATE('10-03-2026','DD-MM-YYYY'));
+
+1 row created.
+
+SQL> INSERT INTO TOURNAMENT VALUES(408,'Hockey Cup','Bhavnagar',TO_DATE('15-03-2026','DD-MM-YYYY'));
+
+1 row created.
+
+SQL> INSERT INTO TOURNAMENT VALUES(409,'Swimming Meet','Rajkot',TO_DATE('20-03-2026','DD-MM-YYYY'));
+
+1 row created.
+
+SQL> INSERT INTO TOURNAMENT VALUES(410,'Athletics Championship','Surat',TO_DATE('25-03-2026','DD-MM-YYYY'));
+
+1 row created.
+
+SQL>
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> INSERT INTO ACHIEVEMENT VALUES(501,101,401,'1st');
+
+1 row created.
+
+SQL> INSERT INTO ACHIEVEMENT VALUES(502,102,404,'2nd');
+
+1 row created.
+
+SQL> INSERT INTO ACHIEVEMENT VALUES(503,103,403,'1st');
+
+1 row created.
+
+SQL> INSERT INTO ACHIEVEMENT VALUES(504,104,405,'3rd');
+
+1 row created.
+
+SQL> INSERT INTO ACHIEVEMENT VALUES(505,105,406,'2nd');
+
+1 row created.
+
+SQL> INSERT INTO ACHIEVEMENT VALUES(506,106,407,'1st');
+
+1 row created.
+
+SQL> INSERT INTO ACHIEVEMENT VALUES(507,107,407,'2nd');
+
+1 row created.
+
+SQL> INSERT INTO ACHIEVEMENT VALUES(508,108,408,'3rd');
+
+1 row created.
+
+SQL> INSERT INTO ACHIEVEMENT VALUES(509,109,409,'1st');
+
+1 row created.
+
+SQL> INSERT INTO ACHIEVEMENT VALUES(510,110,410,'2nd');
+
+1 row created.
+
+SQL>
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> SET LINESIZE 200
+SQL> SET PAGESIZE 100
+SQL> SET WRAP OFF
+SQL> SELECT * FROM SPORT;
+
+  SPORT_ID SPORT_NAME                           FEES SCHEDULE
+---------- ------------------------------ ---------- ------------------------------
+         1 Cricket                              5000 Morning
+         2 Football                             4500 Evening
+         3 Badminton                            4000 Morning
+         4 Basketball                           4800 Evening
+         5 Volleyball                           3500 Morning
+         6 Tennis                               5500 Evening
+         7 Table Tennis                         3000 Morning
+         8 Hockey                               5200 Evening
+         9 Swimming                             6000 Morning
+        10 Athletics                            3800 Evening
+
+10 rows selected.
+
+SQL> SELECT * FROM PLAYER;
+
+ PLAYER_ID PLAYER_NAME                                               AGE GENDER     CONTACT_NO        SPORT_ID
+---------- -------------------------------------------------- ---------- ---------- --------------- ----------
+       101 Rahul Sharma                                               18 Male       9876543210               1
+       102 Priya Patel                                                19 Female     9876543211               3
+       103 Amit Kumar                                                 20 Male       9876543212               2
+       104 Riya Shah                                                  17 Female     9876543213               4
+       105 Karan Mehta                                                21 Male       9876543214               5
+       106 Neha Joshi                                                 18 Female     9876543215               6
+       107 Arjun Singh                                                22 Male       9876543216               7
+       108 Pooja Verma                                                19 Female     9876543217               8
+       109 Vikram Desai                                               20 Male       9876543218               9
+       110 Sneha Dave                                                 18 Female     9876543219              10
+
+10 rows selected.
+
+SQL> SELECT * FROM COACH;
+
+  COACH_ID COACH_NAME                                         EXPERIENCE CONTACT_NO          SALARY
+---------- -------------------------------------------------- ---------- --------------- ----------
+       201 Hardik Chavda                                              10 9991110001           50000
+       202 Jay Patel                                                   8 9991110002           45000
+       203 Rakesh Kumar                                               12 9991110003           55000
+       204 Anita Shah                                                  9 9991110004           47000
+       205 Vivek Mehta                                                11 9991110005           52000
+       206 Komal Joshi                                                 7 9991110006           43000
+       207 Manoj Singh                                                15 9991110007           60000
+       208 Nisha Patel                                                 6 9991110008           42000
+       209 Sanjay Desai                                               13 9991110009           57000
+       210 Priti Dave                                                  8 9991110010           45000
+
+10 rows selected.
+
+SQL> SELECT * FROM ADMISSION;
+
+ADMISSION_ID  PLAYER_ID   SPORT_ID ADMISSION
+------------ ---------- ---------- ---------
+         301        101          1 10-JAN-26
+         302        102          3 12-JAN-26
+         303        103          2 14-JAN-26
+         304        104          4 15-JAN-26
+         305        105          5 18-JAN-26
+         306        106          6 20-JAN-26
+         307        107          7 21-JAN-26
+         308        108          8 23-JAN-26
+         309        109          9 25-JAN-26
+         310        110         10 28-JAN-26
+
+10 rows selected.
+
+SQL> SELECT * FROM TOURNAMENT;
+
+TOURNAMENT_ID TOURNAMENT_NAME                                    LOCATION                                           TOURNAMEN
+------------- -------------------------------------------------- -------------------------------------------------- ---------
+          401 State Championship                                 Rajkot                                             10-FEB-26
+          402 National Cricket Cup                               Ahmedabad                                          15-FEB-26
+          403 Football League                                    Surat                                              20-FEB-26
+          404 Badminton Open                                     Vadodara                                           25-FEB-26
+          405 Basketball Challenge                               Rajkot                                             01-MAR-26
+          406 Volleyball Trophy                                  Jamnagar                                           05-MAR-26
+          407 Tennis Masters                                     Ahmedabad                                          10-MAR-26
+          408 Hockey Cup                                         Bhavnagar                                          15-MAR-26
+          409 Swimming Meet                                      Rajkot                                             20-MAR-26
+          410 Athletics Championship                             Surat                                              25-MAR-26
+
+10 rows selected.
+
+SQL> SELECT * FROM ACHIEVEMENT;
+
+ACHIEVEMENT_ID  PLAYER_ID TOURNAMENT_ID POSITION
+-------------- ---------- ------------- --------------------
+           501        101           401 1st
+           502        102           404 2nd
+           503        103           403 1st
+           504        104           405 3rd
+           505        105           406 2nd
+           506        106           407 1st
+           507        107           407 2nd
+           508        108           408 3rd
+           509        109           409 1st
+           510        110           410 2nd
+
+10 rows selected.

@@ -1,0 +1,23 @@
+PROMPT
+PROMPT ACHIEVEMENT MANAGEMENT
+PROMPT 1. ADD ACHIEVEMENT
+PROMPT 2. UPDATE ACHIEVEMENT
+PROMPT 3. DELETE ACHIEVEMENT
+PROMPT 4. SEARCH ACHIEVEMENT
+PROMPT 5. DISPLAY ACHIEVEMENTS
+PROMPT
+
+ACCEPT CHOICE NUMBER PROMPT 'Enter choice: '
+
+COLUMN ACTION_SCRIPT NEW_VALUE ACTION_SCRIPT NOPRINT
+SELECT CASE &CHOICE
+          WHEN 1 THEN 'achievement_add.sql'
+          WHEN 2 THEN 'achievement_update.sql'
+          WHEN 3 THEN 'achievement_delete.sql'
+          WHEN 4 THEN 'achievement_search.sql'
+          WHEN 5 THEN 'achievement_display.sql'
+          ELSE 'invalidmenu.sql'
+       END ACTION_SCRIPT
+FROM DUAL;
+
+@@&ACTION_SCRIPT

@@ -1,0 +1,13 @@
+SQL> create user SPORTS identified by sports123;
+
+User created.
+
+SQL> grant connect to SPORTS;
+
+Grant succeeded.
+
+SQL> grant resource to SPORTS;
+
+Grant succeeded.
+
+SQL> exit;

@@ -1,0 +1,5 @@
+ACCEPT SPORT_ID NUMBER PROMPT 'Sport ID to delete: '
+
+DELETE FROM SPORT WHERE SPORT_ID = &SPORT_ID;
+COMMIT;
+PROMPT Sport deleted successfully.

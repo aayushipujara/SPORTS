@@ -1,0 +1,5 @@
+ACCEPT COACH_ID NUMBER PROMPT 'Coach ID to delete: '
+
+DELETE FROM COACH WHERE COACH_ID = &COACH_ID;
+COMMIT;
+PROMPT Coach deleted successfully.

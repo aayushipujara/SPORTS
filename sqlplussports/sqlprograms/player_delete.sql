@@ -1,0 +1,5 @@
+ACCEPT PLAYER_ID NUMBER PROMPT 'Player ID to delete: '
+
+DELETE FROM PLAYER WHERE PLAYER_ID = &PLAYER_ID;
+COMMIT;
+PROMPT Player deleted successfully.

@@ -1,0 +1,23 @@
+PROMPT
+PROMPT SPORT MANAGEMENT
+PROMPT 1. ADD SPORT
+PROMPT 2. UPDATE SPORT
+PROMPT 3. DELETE SPORT
+PROMPT 4. SEARCH SPORT
+PROMPT 5. DISPLAY SPORTS
+PROMPT
+
+ACCEPT CHOICE NUMBER PROMPT 'Enter choice: '
+
+COLUMN ACTION_SCRIPT NEW_VALUE ACTION_SCRIPT NOPRINT
+SELECT CASE &CHOICE
+          WHEN 1 THEN 'sport_add.sql'
+          WHEN 2 THEN 'sport_update.sql'
+          WHEN 3 THEN 'sport_delete.sql'
+          WHEN 4 THEN 'sport_search.sql'
+          WHEN 5 THEN 'sport_display.sql'
+          ELSE 'invalidmenu.sql'
+       END ACTION_SCRIPT
+FROM DUAL;
+
+@@&ACTION_SCRIPT

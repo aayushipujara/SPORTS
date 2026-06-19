@@ -1,0 +1,23 @@
+PROMPT
+PROMPT ADMISSION MANAGEMENT
+PROMPT 1. ADD ADMISSION
+PROMPT 2. UPDATE ADMISSION
+PROMPT 3. DELETE ADMISSION
+PROMPT 4. SEARCH ADMISSION
+PROMPT 5. DISPLAY ADMISSIONS
+PROMPT
+
+ACCEPT CHOICE NUMBER PROMPT 'Enter choice: '
+
+COLUMN ACTION_SCRIPT NEW_VALUE ACTION_SCRIPT NOPRINT
+SELECT CASE &CHOICE
+          WHEN 1 THEN 'admission_add.sql'
+          WHEN 2 THEN 'admission_update.sql'
+          WHEN 3 THEN 'admission_delete.sql'
+          WHEN 4 THEN 'admission_search.sql'
+          WHEN 5 THEN 'admission_display.sql'
+          ELSE 'invalidmenu.sql'
+       END ACTION_SCRIPT
+FROM DUAL;
+
+@@&ACTION_SCRIPT

@@ -1,0 +1,23 @@
+PROMPT
+PROMPT PLAYER MANAGEMENT
+PROMPT 1. ADD PLAYER
+PROMPT 2. UPDATE PLAYER
+PROMPT 3. DELETE PLAYER
+PROMPT 4. SEARCH PLAYER
+PROMPT 5. DISPLAY PLAYERS
+PROMPT
+
+ACCEPT CHOICE NUMBER PROMPT 'Enter choice: '
+
+COLUMN ACTION_SCRIPT NEW_VALUE ACTION_SCRIPT NOPRINT
+SELECT CASE &CHOICE
+          WHEN 1 THEN 'player_add.sql'
+          WHEN 2 THEN 'player_update.sql'
+          WHEN 3 THEN 'player_delete.sql'
+          WHEN 4 THEN 'player_search.sql'
+          WHEN 5 THEN 'player_display.sql'
+          ELSE 'invalidmenu.sql'
+       END ACTION_SCRIPT
+FROM DUAL;
+
+@@&ACTION_SCRIPT

@@ -1,0 +1,23 @@
+PROMPT
+PROMPT TOURNAMENT MANAGEMENT
+PROMPT 1. ADD TOURNAMENT
+PROMPT 2. UPDATE TOURNAMENT
+PROMPT 3. DELETE TOURNAMENT
+PROMPT 4. SEARCH TOURNAMENT
+PROMPT 5. DISPLAY TOURNAMENTS
+PROMPT
+
+ACCEPT CHOICE NUMBER PROMPT 'Enter choice: '
+
+COLUMN ACTION_SCRIPT NEW_VALUE ACTION_SCRIPT NOPRINT
+SELECT CASE &CHOICE
+          WHEN 1 THEN 'tournament_add.sql'
+          WHEN 2 THEN 'tournament_update.sql'
+          WHEN 3 THEN 'tournament_delete.sql'
+          WHEN 4 THEN 'tournament_search.sql'
+          WHEN 5 THEN 'tournament_display.sql'
+          ELSE 'invalidmenu.sql'
+       END ACTION_SCRIPT
+FROM DUAL;
+
+@@&ACTION_SCRIPT

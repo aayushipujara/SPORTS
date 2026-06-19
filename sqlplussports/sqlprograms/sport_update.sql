@@ -1,0 +1,6 @@
+ACCEPT SPORT_ID NUMBER PROMPT 'Sport ID to update: '
+ACCEPT NEW_NAME CHAR PROMPT 'New sport name: '
+
+UPDATE SPORT SET SPORT_NAME = '&NEW_NAME' WHERE SPORT_ID = &SPORT_ID;
+COMMIT;
+PROMPT Sport updated successfully.
